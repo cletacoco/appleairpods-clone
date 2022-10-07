@@ -1506,3 +1506,12 @@ nav a:hover {
     background-color: #1d1d1f;
     opacity: .6;
 }
+
+.terms1 > a {
+    color: #1d1d1f;
+    text-decoration: none;
+}
+
+.terms1 > a:hover {
+    text-decoration: underline;
+}
