@@ -162,7 +162,26 @@
     <!-- 10.4 css 마무리 -->
     <section id="main-container">
         <div class="main-img">
-            <img src="img/hero_startframe__f6btrn4bhpyu_large.jpg" alt="에어팟을 낀 남자의 얼굴">
+            <div class="video-container">
+                <input type="checkbox" name="" id="video-play-state">
+                <video src="img/large.mp4" autoplay muted id="this-is-Video"></video>
+                <label for="video-play-state">
+                    <div class="video-play-state-area">
+                    </div>
+                </label>
+            </div>
+            <script>
+                // HTML요소를 Js로 가져오는 문구
+                const thisIsVideo = document.getElementById('this-is-Video');
+                const videoplaystate = document.getElementById('video-play-state');
+                // ~~할때 ~~를 실행할거다!
+                videoplaystate.addEventListener("change",()=>{
+                    if(videoplaystate.checked)
+                       thisIsVideo.pause();
+                    else
+                       thisIsVideo.play();
+                })
+            </script>
             <div class="text-container">
                 <p class="title-1">
                     완전히 새로운
@@ -1012,5 +1031,6 @@
             <span>팩스:02-6928-0000</span>
         </div>
     </section>
+ 
 </body>
 </html>
