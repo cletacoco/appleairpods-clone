@@ -51,12 +51,12 @@
             left: 50%;
             transform: translate(-50%,-50%);
             background-color: #fff;
-            background-image: url(img/pause.svg);
+            -webkit-mask:url(img/pause.svg);
             opacity: 0.5;
         }
         
         #video-play-state:checked ~ label > .video-play-state-area::after {
-            background-image: url(img/play.svg);
+            -webkit-mask:url(img/play.svg);
         }
 
         .video-play-state-area:hover::after {
